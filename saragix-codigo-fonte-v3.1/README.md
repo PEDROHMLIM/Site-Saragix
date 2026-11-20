@@ -126,44 +126,6 @@ chess-reviewer/
 
 ---
 
-## Instalação e Execução Local
-
-### Pré-requisitos
-- Node.js (versão 18 ou superior)
-- npm ou pnpm
-
-### Passos de Instalação
-
-1. Clone o repositório do GitHub:
-```bash
-git clone https://github.com/SEU_USUARIO/Site-Saragix.git
-cd Site-Saragix
-```
-
-2. Instale as dependências:
-```bash
-npm install
-```
-
-3. Inicie o servidor de desenvolvimento:
-```bash
-npm run dev
-```
-O aplicativo estará disponível em `http://localhost:5173`.
-
-4. Para compilar a versão final otimizada para produção:
-```bash
-npm run build
-```
-Os arquivos prontos para publicação serão gerados na pasta `dist/`.
-
-5. Para executar os testes automatizados de qualidade:
-```bash
-node scripts/verifySite.js
-```
-
----
-
 ## Publicação Online (Deploy Gratuito)
 
 O Saragix é 100% estático no frontend e pode ser publicado gratuitamente em plataformas globais:
