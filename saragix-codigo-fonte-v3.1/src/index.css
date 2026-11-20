@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0a0a0c;
+    color: #ececef;
+  }
+
+  .font-serif-editorial {
+    font-family: 'Instrument Serif', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Superfícies Sóbrias e Planas (Estilo Endgame.ai + Lichess) — Sem degradês neon */
+.saragix-hero-bg {
+  background-color: #121215;
+  border: 1px solid #222228;
+}
+
+.saragix-card {
+  background-color: #121215;
+  border: 1px solid #222228;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.saragix-card:hover {
+  border-color: #32323c;
+}
+
+/* Correção do modal de promoção de peão do react-chessboard:
+   Por padrão, o react-chessboard aplica translate(-boardWidth/8, -boardWidth/8) a partir
+   do centro da casa de destino (ex: a8), fazendo metade superior/esquerda dos ícones sair
+   para fora do tabuleiro e ser cortada pelo overflow-hidden.
+   Centralizamos o seletor dentro do próprio tabuleiro com visual sóbrio e ícones inteiros. */
+div[title="Choose promotion piece"] {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 12px 14px !important;
+  background-color: #14161b !important;
+  border: 1px solid #2e333d !important;
+  border-radius: 10px !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.85) !important;
+  width: auto !important;
+  height: auto !important;
+  z-index: 1000 !important;
+}
+
+div[title="Choose promotion piece"] > div[data-piece] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 6px !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  box-sizing: border-box !important;
+}
+
+div[title="Choose promotion piece"] > div[data-piece]:hover {
+  border-color: #ececef !important;
+  box-shadow: 0 0 0 1px #ececef !important;
+}
+
+div[title="Choose promotion piece"] > div[data-piece] svg {
+  display: block !important;
+  overflow: visible !important;
+}
+
+/* Custom scrollbar discreta */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #26262e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a46;
+}
