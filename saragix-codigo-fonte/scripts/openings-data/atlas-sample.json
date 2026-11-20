@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Sicilian Defense: Najdorf Variation",
+        "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6",
+        "description": "The Najdorf is the 'Cadillac' of chess openings. It is a sharp, complex, and highly aggressive line for Black.",
+        "key_ideas": [
+            "Preventing Nb5 with a6",
+            "Flexible development for Black",
+            "Preparation for queenside expansion",
+            "Avoiding early pins on the c3 knight"
+        ]
+    },
+    {
+        "name": "Italian Game: Evans Gambit",
+        "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4",
+        "description": "An aggressive sacrifice designed to draw Black's bishop away from the center and gain a massive tempo for development.",
+        "key_ideas": [
+            "Sacrificing a pawn for center control",
+            "Rapid development of the queen and kingside pieces",
+            "Attacking the f7 square early",
+            "Leading to sharp, tactical struggles"
+        ]
+    },
+    {
+        "name": "London System",
+        "pgn": "1. d4 d5 2. Bf4",
+        "description": "A solid and flexible system for White that can be played against almost any response from Black.",
+        "key_ideas": [
+            "Early development of the dark-squared bishop",
+            "Strong triangular pawn structure (c3-d4-e3)",
+            "Safe king position",
+            "Controlling the e5 square"
+        ]
+    }
+]
